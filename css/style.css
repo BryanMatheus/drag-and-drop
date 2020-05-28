@@ -42,19 +42,23 @@ body {
   font-size: 18px;
 }
 
-.card .status{
+.card .status {
   width: 30px;
   height: 8px;
   margin-bottom: 16px;
   border-radius: 8px;
 }
 
-.status.red{
+.status.red {
   background-color: crimson;
 }
-.status.blue{
+.status.blue {
   background-color: darkslateblue;
 }
-.status.yellow{
+.status.yellow {
   background-color: gold;
+}
+
+.highlight {
+  background-color: #fd951f22
 }
