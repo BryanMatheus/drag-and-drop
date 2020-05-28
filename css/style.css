@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.boards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.board {
+  background-color: #333;
+  border: 1px solid #fd951f33;
+  border-radius: 4px;
+  margin: 0 16px;
+}
+.board h3 {
+  padding: 16px;
+  margin: 0;
+  color: #fd951fcc;
+}
+
+.board .dropzone {
+  padding: 16px;
+  min-width: 282px;
+  min-height: 200px;
+}
+.dropzone .card {
+  background-color: #3f3f3f;
+  padding: 16px;
+  box-shadow: 0 2px 2px -1px #fd951fcc;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card .status{
+  width: 30px;
+  height: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.status.red{
+  background-color: crimson;
+}
+.status.blue{
+  background-color: darkslateblue;
+}
+.status.yellow{
+  background-color: gold;
+}
