@@ -60,5 +60,18 @@ body {
 }
 
 .highlight {
-  background-color: #fd951f22
+  background-color: #fd951f22;
+}
+
+.card,
+.dropzone {
+  transition: 400ms;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+.over{
+  background-color: #4cd12722;
 }

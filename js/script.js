@@ -9,27 +9,39 @@ const dropzones = document.querySelectorAll(".dropzone");
 
 // Card functions
 function dragStart() {
+  dropzones.forEach((dropzone) => dropzone.classList.add("highlight"));
+  this.classList.add("is-dragging");
   // log("card", "Start dragging");
 }
 function drag() {
   // log("card", "Is dragging");
 }
 function dragEnd() {
+  dropzones.forEach((dropzone) => dropzone.classList.remove("highlight"));
+  this.classList.remove("is-dragging");
   // log("card", "End dragging");
 }
 
 // Dropzone functions
 function dragEnter() {
-  log("dropzone", "A card entered here");
+  // log("dropzone", "A card entered here");
 }
 function dragOver() {
-  log("dropzone", "A card passed by here");
+  // this = dropzone
+  this.classList.add("over");
+
+  // Get dragging card
+  const cardBeingDragged = document.querySelector(".is-dragging");
+  this.appendChild(cardBeingDragged);
+  // log("dropzone", "A card passed by here");
 }
 function dragLeave() {
-  log("dropzone", "A card left here");
+  this.classList.remove("over");
+  // log("dropzone", "A card left here");
 }
 function drop() {
-  log("dropzone", "A card dropped here")
+  this.classList.remove("over")
+  // log("dropzone", "A card dropped here");
 }
 
 // Our cards
